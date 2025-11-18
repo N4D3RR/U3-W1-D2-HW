@@ -3,13 +3,16 @@ import BookNavBar from "./components/BookNavBar"
 import BookFooter from "./components/BookFooter"
 import Welcome from "./components/Welcome"
 import AllTheBooks from "./components/AllTheBooks"
+import Container from "react-bootstrap/Container"
 
-function App() {
+const App = function () {
   return (
     <>
       <BookNavBar />
-      <Welcome />
-      <AllTheBooks />
+      <Container>
+        <Welcome />
+        <AllTheBooks />
+      </Container>
       <BookFooter />
     </>
   )
