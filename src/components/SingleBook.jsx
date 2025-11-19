@@ -5,10 +5,14 @@ class SingleBook extends Component {
     selected: false,
   }
   toggleSelected = () => {
-    this.setState({
-      selected: !this.state.selected, //inverto il valore di selected con !
-    })
-    console.log("Valore selected:", this.state.selected)
+    this.setState(
+      {
+        selected: !this.state.selected, //inverto il valore di selected con !
+      },
+      function () {
+        console.log("Valore selected:", this.state.selected)
+      }
+    )
   }
   render() {
     const book = this.props.book

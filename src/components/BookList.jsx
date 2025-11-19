@@ -9,10 +9,9 @@ class BookList extends Component {
   }
   render() {
     const books = this.props.books
-    console.log("LIBRI:", this.props.books)
 
-    const filteredBooks = books.filter((book) => {
-      return book.title.toLowerCase().includes(this.state.search)
+    const filteredBooks = this.props.books.filter((book) => {
+      return book.title.toLowerCase().includes(this.state.search.toLowerCase())
     })
     console.log("LIBRI CERCATI:", filteredBooks)
     return (
@@ -21,6 +20,7 @@ class BookList extends Component {
           <Form.Control
             type="text"
             placeholder="Cerca un libro"
+            className="text-center"
             value={this.state.search}
             onChange={(e) => {
               this.setState({ search: e.target.value })
