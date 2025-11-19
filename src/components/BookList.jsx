@@ -10,10 +10,10 @@ class BookList extends Component {
     return (
       <Container className="mt-4">
         <Row className="g-4">
-          {books.map((book) => {
+          {books.map((libri) => {
             return (
-              <Col xs={6} sm={4} md={3} lg={2} key={book.asin}>
-                <SingleBook book={book} />
+              <Col xs={6} sm={4} md={3} lg={2} key={libri.asin}>
+                <SingleBook book={libri} />
               </Col>
             )
           })}
