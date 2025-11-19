@@ -2,8 +2,11 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import BookNavBar from "./components/BookNavBar"
 import BookFooter from "./components/BookFooter"
 import Welcome from "./components/Welcome"
-import AllTheBooks from "./components/AllTheBooks"
+
 import Container from "react-bootstrap/Container"
+
+import BookList from "./components/BookList"
+import fantasy from "./data/books/fantasy.json"
 
 const App = function () {
   return (
@@ -11,7 +14,8 @@ const App = function () {
       <BookNavBar />
       <Container>
         <Welcome />
-        <AllTheBooks />
+        {/* <AllTheBooks /> */}
+        <BookList books={fantasy} />
       </Container>
       <BookFooter />
     </>

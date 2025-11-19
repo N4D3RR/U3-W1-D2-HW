@@ -1,7 +1,6 @@
 import { Container, Row, Col, Card } from "react-bootstrap"
 import { Component } from "react"
 import fantasy from "../data/books/fantasy.json"
-import history from "../data/books/history.json"
 
 class AllTheBooks extends Component {
   state = {}
