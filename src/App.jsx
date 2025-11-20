@@ -7,6 +7,8 @@ import Container from "react-bootstrap/Container"
 
 import BookList from "./components/BookList"
 import fantasy from "./data/books/fantasy.json"
+import scifi from "./data/books/scifi.json"
+import horror from "./data/books/horror.json"
 
 const App = function () {
   return (
@@ -15,7 +17,8 @@ const App = function () {
       <Container>
         <Welcome />
         {/* <AllTheBooks /> */}
-        <BookList books={fantasy} />
+
+        <BookList books={horror} />
       </Container>
       <BookFooter />
     </>
